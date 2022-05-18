@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f5f7f8;
+      }
+
+      .email_send_container {
+        width: 100%;
+        float: left;
+        background: url(https://zebradoctor-patient-public-bucket-development.s3.us-west-2.amazonaws.com/bg-email.png);
+        background-repeat: no-repeat;
+        background-size: 100% 225px;
+      }
+
+      .email_send_container .email_send_model {
+        background-color: white;
+        border: 1px solid #d0d7e0;
+        padding: 20px 20px;
+        border-radius: 5px;
+        margin: 0 auto;
+        max-width: 600px;
+        width: 100%;
+      }
+
+      .email_send_container .email_send_modal_wrapper {
+        padding-top: 50px;
+        width: 100%;
+      }
+
+      .email_send_container .email_send_header {
+        color: #142f62;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Lato';
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .email_image_container .email_image_container_header {
+        font-family: 'Lato';
+        font-size: 27px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .email_send_container .email_send_subHeader {
+        color: #00234b;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Lato';
+        text-align: left;
+        margin-top: 20px;
+      }
+
+      .email_send_container .email_send_subHeader_description {
+        color: #142f62;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: 'Lato';
+        text-align: left;
+        margin: 15px 0px 10px 0px;
+        text-align: center;
+      }
+
+      .email_send_container .email_send_subHeader_description_time {
+        color: #858585;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Lato';
+        text-align: left;
+        margin: 0px;
+        text-align: center;
+      }
+
+      .email_send_container .email_send_subHeader_description_time button {
+        margin-top: 10px;
+        padding: 8px 9px;
+        font-family: 'Lato';
+        color: white;
+        background: #142f62;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .email_send_container .email_send_modal_redirection_section {
+        width: 100%;
+      }
+
+      .email_send_container .email_send_body_detail {
+        width: 100%;
+        padding: 10px 10px;
+        text-align: left;
+        margin-bottom: 10px;
+
+        position: relative;
+      }
+
+      .email_send_container .email_send_body_detail p {
+        width: 90%;
+        word-break: break-all;
+        color: #00234b;
+        font-size: 16px;
+        font-family: 'Lato';
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .email_send_container .email_send_body_detail span {
+        margin-left: 5px;
+      }
+
+      .email_send_container .email_sendHeader_container_wrapper {
+        width: 100%;
+        border: 6px solid #f5f7f8;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+
+      th,
+      td {
+        padding: 5px;
+      }
+
+      @media (max-width: 480px) {
+        .email_send_container {
+          background-color: #00234b;
+          height: 100%;
+        }
+
+        .email_send_container .email_footer {
+          color: white;
+        }
+
+        .download_section_report p {
+          width: 220px;
+        }
+
+        .email_send_container .email_send_model {
+          border-radius: 0px;
+        }
+
+        .email_send_container .email_send_h1 {
+          font-size: 16px;
+        }
+
+        .email_send_container .email_send_p2 {
+          font-size: 14px;
+        }
+
+        .email_send_container .email_send_p1 {
+          font-size: 14px;
+        }
+
+        .email_send_container .email_send_p1 br {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="email_send_container">
+      <div class="email_send_modal_wrapper">
+        <div class="handle-box">
+          <table class="email_send_model">
+            <tbody>
+              <tr>
+                <th class="email_sendHeader_container">
+                  <div class="email_image_container">
+                    <img
+                      src="https://zebra.doctor/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbrand-logo.d661ddae.png&w=256&q=75"
+                      alt="image not found"
+                    />
+                  </div>
+                  <h2 class="email_send_header">
+                    Manhattan Medical Arts Shared a File
+                  </h2>
+                  <h3 class="email_send_subHeader">
+                    Hi,osama your vist is booked!
+                  </h3>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <table class="email_sendHeader_container_wrapper">
+                    <tr>
+                      <th class="email_sendHeader_container">
+                        <p class="email_send_subHeader_description">
+                          Visit Details
+                        </p>
+                        <p class="email_send_subHeader_description_time">
+                          Monday,Feb 2022 at 12:00
+                        </p>
+                        <a
+                          class="email_send_subHeader_description_time"
+                          target="_blank"
+                          href="https://www.google.com.pk"
+                          ><button>Prepare for your visit</button></a
+                        >
+                      </th>
+                    </tr>
+                    <tr>
+                      <th>
+                        <table class="email_send_modal_redirection_section">
+                          <tr>
+                            <th>
+                              <div class="email_send_body_detail">
+                                <p>
+                                  <img
+                                    src="https://zebra.doctor/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FGroup1479.e1226ef3.svg&w=96&q=75"
+                                    alt=".."
+                                    style="width: 20px"
+                                  /><span>CAll Now</span>
+                                </p>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="email_send_body_detail">
+                                <p>
+                                  <img
+                                    src="https://zebra.doctor/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FGroup1454.7bf7c46b.svg&w=96&q=75"
+                                    alt=".."
+                                    style="width: 20px"
+                                  /><span>Re-schedule</span>
+                                </p>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="email_send_body_detail">
+                                <p>
+                                  <img
+                                    src="https://zebra.doctor/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FGroup1453.526b0391.svg&w=96&q=75"
+                                    alt=".."
+                                    style="width: 20px"
+                                  /><span>Redirection</span>
+                                </p>
+                              </div>
+                            </th>
+                          </tr>
+                        </table>
+                      </th>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
